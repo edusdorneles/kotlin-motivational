@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/image_volunteer"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:src="@drawable/outline_volunteer_activism_24" />
+
+
+        <ImageView
+            android:id="@+id/image_emoticon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:src="@drawable/outline_insert_emoticon_24" />
+
+        <ImageView
+            android:id="@+id/image_sunny"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:src="@drawable/outline_wb_sunny_24" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_menu"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/text_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_kotlin"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_generated_phrase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/first_motivational"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="256dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/primary" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_new_phrase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/primary"
+            android:text="@string/new_phrase" />
+    </RelativeLayout>
+
+</RelativeLayout>
